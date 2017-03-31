@@ -3,7 +3,7 @@ const hbs = require('hbs'); //handlebar template engine
 const fs = require('fs');
 
 var app = express(),
-    port = 3000;
+    port = process.env.PORT || 3000;
 
 //config
 hbs.registerPartials(__dirname + '/views/partials');
